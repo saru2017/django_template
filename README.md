@@ -10,4 +10,14 @@
 + Pythonの環境があればさくっとローカルでDjangoサーバを立ち上げて挙動を確認できる。
 + WebフレームワークはRailsを1回触って「簡単なことをやるのにも異様に手間がかかる」「カスタマイズがし辛い」ので嫌いになったが、さすがにRails likeなWebフレームワークが出てきて10年以上経てばいろいろ解消できているだろう、と思い始めた。
 + Dockerの登場によってWebサーバとのつなぎ込みが自動化できるようになった。
++ sqliteの欠点がよくわからない。パフォーマンスは結構出る様子。トラブルが起こるまでsqlite3使ってみようかなと思い始めている。
+
+## condaでのdjangoのインストール
+
+```
+conda install django
+django-admin startproject main
+python manage.py migrate
+python manage.py runserver
+```
 
